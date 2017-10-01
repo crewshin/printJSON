@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/GeneCrucean"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.ios.deployment_target = "11.0"
+  s.ios.deployment_target = "10.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/crewshin/printJSON.git", :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files  = "Classes", "Classes/*.swift"
+  s.source_files  = "Classes", "printJSON/Classes/*.swift"
   s.exclude_files = "Classes/Exclude"
   # s.public_header_files = "Classes/**/*.h"
 
