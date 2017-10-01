@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   A print function that converts swift's native dictionary/array output from print with proper JSON.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/printJSON"
+  s.homepage     = "https://github.com/crewshin/printJSON/blob/master/README.md"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
