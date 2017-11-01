@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "printJSON"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "A print function that converts swift's native dictionary/array output from print with JSON"
 
   s.description  = <<-DESC
