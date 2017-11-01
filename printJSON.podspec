@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/crewshin/printJSON.git", :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files  = "Classes", "printJSON/Classes/*.swift"
+  s.source_files  = "Classes/**/*"
   s.exclude_files = "Classes/Exclude"
   # s.public_header_files = "Classes/**/*.h"
 

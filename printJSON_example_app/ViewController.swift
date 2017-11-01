@@ -20,15 +20,6 @@ class ViewController: UIViewController {
         print(dictMain)
         print("=========== JSON print ============")
         printJSON(dictMain)
-        
-        // Uncomment for some more examples of how it handles different data types.
-//        print("=========== JSON print - Array ============")
-//        printJSON(arrrrayMatey)
-//        print("=========== JSON print - Misc ============")
-//        printJSON("Here are some tests with different data types... as this utility was designed mostly for dictionaries and arrays convertable to JSON.")
-//        printJSON(65454)
-//        print(412.423423)
-//        print(true)
     }
 
     override func didReceiveMemoryWarning() {

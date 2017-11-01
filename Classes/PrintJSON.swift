@@ -1,6 +1,5 @@
 //
 //  PrintJSON.swift
-//  printJSON_example_app
 //
 //  Created by Gene Crucean on 10/1/17.
 //  Copyright © 2017 Gene Crucean. All rights reserved.
@@ -25,7 +24,7 @@ public func printJSON(_ items: Any..., separator: String = " ", terminator: Stri
                 let jsonString = String(data: json ?? Data(), encoding: String.Encoding.utf8) ?? ""
                 return "\(jsonString)"
             }
-
+            
             return item
         default:
             return "{\"input\": \"\(item)\"}"
