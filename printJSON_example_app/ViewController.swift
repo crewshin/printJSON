@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         print(dictMain)
         print("=========== JSON print ============")
         printJSON(dictMain)
+        
+        // Uncomment this to get a ready to copy/pasta into a web browser.
+//        printJSON(dictMain, prettyPrintURL: true)
     }
 
     override func didReceiveMemoryWarning() {

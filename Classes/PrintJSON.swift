@@ -7,14 +7,21 @@
 
 import UIKit
 
-public func printJSON(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+public func printJSON(_ items: Any..., separator: String = " ", terminator: String = "\n", prettyPrintURL: Bool = false) {
     let output = items.map { (item) -> Any in
         switch item {
         case is Array<Any>:
             if let itemUnwrapped = item as? [Any] {
                 let json = try? JSONSerialization.data(withJSONObject: itemUnwrapped, options: [])
                 let jsonString = String(data: json ?? Data(), encoding: String.Encoding.utf8) ?? ""
-                return "\(jsonString)"
+                if prettyPrintURL {
+                    print("------------------------------ printJSON ------------------------------")
+                    print("Copy and paste this into a browser for pretty print + linting")
+                    return "https://jsonlint.com/?json=\(jsonString)"
+                }
+                else {
+                    return "\(jsonString)"
+                }
             }
             
             return item
@@ -22,7 +29,14 @@ public func printJSON(_ items: Any..., separator: String = " ", terminator: Stri
             if let itemUnwrapped = item as? [String: Any] {
                 let json = try? JSONSerialization.data(withJSONObject: itemUnwrapped, options: [])
                 let jsonString = String(data: json ?? Data(), encoding: String.Encoding.utf8) ?? ""
-                return "\(jsonString)"
+                if prettyPrintURL {
+                    print("------------------------------ printJSON ------------------------------")
+                    print("Copy and paste this into a browser for pretty print + linting")
+                    return "https://jsonlint.com/?json=\(jsonString)"
+                }
+                else {
+                    return "\(jsonString)"
+                }
             }
             
             return item
