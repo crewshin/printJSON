@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "printJSON"
-  s.version      = "1.1.0"
+  s.version      = "1.2.0"
   s.summary      = "An alternative to print() that simply lets you output proper json."
 
   s.description  = <<-DESC
@@ -33,8 +33,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/crewshin/printJSON.git", :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files  = "Classes/**/*"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Source/**/*"
+  s.exclude_files = "Source/Exclude/*"
   # s.public_header_files = "Classes/**/*.h"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
