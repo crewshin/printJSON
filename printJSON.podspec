@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary      = "An alternative to print() that simply lets you output proper json."
 
   s.description  = <<-DESC
-  An alternative to print() that simply lets you output proper json.
+  An alternative to print() that simply lets you output proper json to the console.
                    DESC
 
   s.homepage     = "https://github.com/crewshin/printJSON/blob/master/README.md"
